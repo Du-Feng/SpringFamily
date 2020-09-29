@@ -1,0 +1,2 @@
+INSERT INTO FOO (ID, BAR) VALUES (1, 'Du Feng');
+INSERT INTO FOO (ID, BAR) VALUES (2, 'Gong Jing');
