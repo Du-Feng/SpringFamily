@@ -21,3 +21,12 @@
 
 4. Maven Reload Project
 ![Maven Reload Project](assets/images/maven.reload.project.png)
+
+5. application.properties中指定handler
+
+        mybatis.type-handlers-package=com.example.mybatis.handler
+    
+6. 在 MybatisApplication 的MapperScan注解中指定 mapper
+
+        @MapperScan("com.example.mybatis.mapper")
+        public class MybatisApplication implements ApplicationRunner {
