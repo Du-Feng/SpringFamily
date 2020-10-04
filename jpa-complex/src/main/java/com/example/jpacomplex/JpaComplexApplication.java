@@ -68,12 +68,13 @@ public class JpaComplexApplication implements ApplicationRunner {
     private void findOrders() {
         coffeeRepository.findAll(Sort.by(Sort.Direction.DESC, "id"))
                 .forEach(c -> log.info("Loading: {}", c));
+
         List<CoffeeOrder> list = orderRepository.findTop3ByOrderByUpdateTimeDescIdAsc();
         log.info("findTop3ByOrderByUpdateTimeDescIdAsc", getJoinedOrderId(list));
 
         list = orderRepository.findByCustomerOrderById("Li Lei");
         log.info("findByCustomerOrderById: {}", getJoinedOrderId(list));
-
+        // 不开启事务会因为没Session而报LazyInitializationException, Run 方法里添加了注解 Transactional
         list.forEach(o -> {
             log.info("Order {}", o.getId());
             o.getItems().forEach(i -> log.info("  Item {}", i));
