@@ -64,5 +64,4 @@ public class JpaApplication implements ApplicationRunner {
         orderRepository.save(order);
         log.info("Order: {}", order);
     }
-
 }
