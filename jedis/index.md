@@ -34,6 +34,8 @@
             <version>7.0.0.CR1</version>
         </dependency>
 
-4. Maven Clean and Install
+4. Maven Clean Install
+![Maven Clean Install](assets/images/run.maven.png)
 
 5. Maven Reload Project
+![Maven Reload Project](assets/images/maven.reload.project.png)
