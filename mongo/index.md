@@ -1,6 +1,15 @@
 # Learn mongo in Docker
 
-1. 在docker container shell上执行如下命令：
+1. 本示例所依赖的 mongo db 运行在 docker上，请按照如下步骤配置 docker
+- 获取 mongo 镜像
+
+        docker pull mongo
+
+- 运行MongoDB 镜像
+
+        docker run --name mongo -p 27017:27017 -v ~/docker-data/mongo:/data/db -e MONGO_INITDB_ROOT_USERNAME=admin -e MONGO_INITDB_ROOT_PASSWORD=admin -d mongo
+      
+- 运行docker container shell
 - 创建库
 
         use springbucks;
