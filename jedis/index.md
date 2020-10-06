@@ -39,3 +39,5 @@
 
 5. Maven Reload Project
 ![Maven Reload Project](assets/images/maven.reload.project.png)
+
+6. 最后配置 application.properties, schema.sql, data.sql 三个文件
