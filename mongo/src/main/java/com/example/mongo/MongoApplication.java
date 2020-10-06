@@ -51,6 +51,15 @@ public class MongoApplication implements ApplicationRunner {
         Coffee saved = mongoTemplate.save(espresso);
         log.info("Coffee {}", saved);
 
+        Coffee latte = Coffee.builder()
+                .name("latte")
+                .price(Money.of(CurrencyUnit.of("CNY"), 30.0))
+                .createTime(new Date())
+                .updateTime(new Date())
+                .build();
+        saved = mongoTemplate.save(latte);
+        log.info("Coffee {}", saved);
+
         List<Coffee> list = mongoTemplate.find(
                 query(where("name").is("espresso")), Coffee.class
         );
@@ -66,6 +75,6 @@ public class MongoApplication implements ApplicationRunner {
         Coffee updateOne = mongoTemplate.findById(saved.getId(), Coffee.class);
         log.info("Update Result: {}", updateOne);
 
-        mongoTemplate.remove(updateOne);
+        //mongoTemplate.remove(updateOne);
     }
 }
