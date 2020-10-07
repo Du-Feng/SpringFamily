@@ -1,22 +1,33 @@
 # Jedis
 
-1. Docker
-官方指引
+# 主要内容
+> #### 在 Docker 上配置和运行 Redis
+> #### Spring Start io
+> #### Maven Configuration
+> #### Project Configuration
+
+# 在 Docker 上配置和运行 Redis
+- 官方指引
 
         https://hub.docker.com/_/redis
 
-获取镜像
+- 获取镜像
 
         docker pull redis
 
-启动 Redis
+- 启动 Redis
+. 初次启动时执行如下命令：
 
         docker run --name redis -d -p 6379:6379 redis
 
-2. Spring Start io
+-- 以后启动时执行如下命令：
+        docker start redis
+
+# Spring Start io
 ![Spring Start](assets/images/spring.initializr.png)
 
-3. pom.xml
+# Maven Configuration
+1. pom.xml
 
         <dependency>
             <groupId>redis.clients</groupId>
@@ -34,10 +45,11 @@
             <version>7.0.0.CR1</version>
         </dependency>
 
-4. Maven Clean Install
+2. Maven Clean Install
 ![Maven Clean Install](assets/images/run.maven.png)
 
-5. Maven Reload Project
+3. Maven Reload Project
 ![Maven Reload Project](assets/images/maven.reload.project.png)
 
-6. 最后配置 application.properties, schema.sql, data.sql 三个文件
+# Project Configuration
+配置 application.properties, schema.sql, data.sql 三个文件
