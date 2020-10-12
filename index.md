@@ -40,3 +40,5 @@
 - 通过 AOP 打印数据访问层的摘要
 
 # Chapter 6: Spring MVC 实践
+- [simple-controller](https://du-feng.github.io/SpringFamily/simple-controller) 编写第一个 Spring MVC Controller
+- [context-hierarchy](https://du-feng.github.io/SpringFamily/context-hierarchy) 理解 Spring 的应用上下文
