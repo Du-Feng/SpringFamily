@@ -21,6 +21,11 @@
 			<artifactId>jackson-datatype-hibernate5</artifactId>
 			<version>2.11.3</version>
 		</dependency>
+        <dependency>
+            <groupId>javax.validation</groupId>
+            <artifactId>validation-api</artifactId>
+            <version>2.0.1.Final</version>
+        </dependency>
 		<!-- 增加Jackson XML支持 -->
 		<dependency>
 			<groupId>com.fasterxml.jackson.dataformat</groupId>
