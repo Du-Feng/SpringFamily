@@ -40,9 +40,9 @@
 - 通过 AOP 打印数据访问层的摘要
 
 # Chapter 6: Spring MVC 实践
-- [simple-controller](https://du-feng.github.io/SpringFamily/Chapter 6/simple-controller) 编写第一个 Spring MVC Controller
-- [context-hierarchy](https://du-feng.github.io/SpringFamily/Chpater 6/context-hierarchy) 理解 Spring 的应用上下文
-- [complex-controller](https://du-feng.github.io/SpringFamily/Chpater 6/complex-controller) 编写第二个 Spring MVC Controller
-- [json-view](https://du-feng.github.io/SpringFamily/Chpater 6/json-view) Spring MVC Json 视图
-- [more-complex-controller](https://du-feng.github.io/SpringFamily/Chpater 6/more-complex-controller) Spring 更多的视图
+- [simple-controller](https://du-feng.github.io/SpringFamily/Chapter%206/simple-controller) 编写第一个 Spring MVC Controller
+- [context-hierarchy](https://du-feng.github.io/SpringFamily/Chpater%206/context-hierarchy) 理解 Spring 的应用上下文
+- [complex-controller](https://du-feng.github.io/SpringFamily/Chpater%206/complex-controller) 编写第二个 Spring MVC Controller
+- [json-view](https://du-feng.github.io/SpringFamily/Chpater%206/json-view) Spring MVC Json 视图
+- [more-complex-controller](https://du-feng.github.io/SpringFamily/Chpater%206/more-complex-controller) Spring 更多的视图
 - 静态资源与缓存 （不推荐这种办法）
