@@ -15,7 +15,7 @@ public class CoffeeController {
     @Autowired
     private CoffeeService coffeeService;
 
-    @GetMapping(path = "/", params = "@name")
+    @GetMapping(path = "/", params = "!name")
     @ResponseBody
     public List<Coffee> getAll() {
         return coffeeService.getAllCoffee();

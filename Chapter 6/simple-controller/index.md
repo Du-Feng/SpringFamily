@@ -1,5 +1,7 @@
 # Simple Controller - First Spring MVC Project
+这是第一个 Controller 的示例程序，简单演示下其功能。
 
+# Project Setup
 1. Spring Start io
 ![Spring Start io](assets/images/spring.initializr.png)
 
@@ -17,3 +19,5 @@
 		</dependency>
 		
 3. application.properties, schema.sql, data.sql
+
+# Knowledge
